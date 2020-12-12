@@ -1,0 +1,163 @@
+// AST para Calculadora
+digraph AST {
+	node [color=lightblue2 shape=box style=filled]
+	n01 [label=assign]
+	n02 [label="variable
+name: x" color=limegreen]
+	n01 -> n02
+	n03 [label="binop
+op: /"]
+	n04 [label="constant
+value: 1.0" color=yellow]
+	n03 -> n04
+	n05 [label="constant
+value: 2.0" color=yellow]
+	n03 -> n05
+	n01 -> n03
+	n06 [label=assign]
+	n07 [label="variable
+name: arcsin_x" color=limegreen]
+	n06 -> n07
+	n08 [label="binop
+op: +"]
+	n09 [label="binop
+op: +"]
+	n10 [label="binop
+op: +"]
+	n11 [label="variable
+request: x" color=lightgreen]
+	n10 -> n11
+	n12 [label="binop
+op: /"]
+	n13 [label="binop
+op: *"]
+	n14 [label="binop
+op: /"]
+	n15 [label="constant
+value: 1.0" color=yellow]
+	n14 -> n15
+	n16 [label="constant
+value: 2.0" color=yellow]
+	n14 -> n16
+	n13 -> n14
+	n17 [label="binop
+op: ^"]
+	n18 [label="variable
+request: x" color=lightgreen]
+	n17 -> n18
+	n19 [label="constant
+value: 3.0" color=yellow]
+	n17 -> n19
+	n13 -> n17
+	n12 -> n13
+	n20 [label="constant
+value: 3.0" color=yellow]
+	n12 -> n20
+	n10 -> n12
+	n09 -> n10
+	n21 [label="binop
+op: /"]
+	n22 [label="binop
+op: *"]
+	n23 [label="binop
+op: *"]
+	n24 [label="binop
+op: /"]
+	n25 [label="constant
+value: 1.0" color=yellow]
+	n24 -> n25
+	n26 [label="constant
+value: 2.0" color=yellow]
+	n24 -> n26
+	n23 -> n24
+	n27 [label="binop
+op: /"]
+	n28 [label="constant
+value: 3.0" color=yellow]
+	n27 -> n28
+	n29 [label="constant
+value: 4.0" color=yellow]
+	n27 -> n29
+	n23 -> n27
+	n22 -> n23
+	n30 [label="binop
+op: ^"]
+	n31 [label="variable
+request: x" color=lightgreen]
+	n30 -> n31
+	n32 [label="constant
+value: 5.0" color=yellow]
+	n30 -> n32
+	n22 -> n30
+	n21 -> n22
+	n33 [label="constant
+value: 5.0" color=yellow]
+	n21 -> n33
+	n09 -> n21
+	n08 -> n09
+	n34 [label="binop
+op: /"]
+	n35 [label="binop
+op: *"]
+	n36 [label="binop
+op: *"]
+	n37 [label="binop
+op: *"]
+	n38 [label="binop
+op: /"]
+	n39 [label="constant
+value: 1.0" color=yellow]
+	n38 -> n39
+	n40 [label="constant
+value: 2.0" color=yellow]
+	n38 -> n40
+	n37 -> n38
+	n41 [label="binop
+op: /"]
+	n42 [label="constant
+value: 3.0" color=yellow]
+	n41 -> n42
+	n43 [label="constant
+value: 4.0" color=yellow]
+	n41 -> n43
+	n37 -> n41
+	n36 -> n37
+	n44 [label="binop
+op: /"]
+	n45 [label="constant
+value: 5.0" color=yellow]
+	n44 -> n45
+	n46 [label="constant
+value: 6.0" color=yellow]
+	n44 -> n46
+	n36 -> n44
+	n35 -> n36
+	n47 [label="binop
+op: ^"]
+	n48 [label="variable
+request: x" color=lightgreen]
+	n47 -> n48
+	n49 [label="constant
+value: 7.0" color=yellow]
+	n47 -> n49
+	n35 -> n47
+	n34 -> n35
+	n50 [label="constant
+value: 7.0" color=yellow]
+	n34 -> n50
+	n08 -> n34
+	n06 -> n08
+	n51 [label=assign]
+	n52 [label="variable
+name: pi" color=limegreen]
+	n51 -> n52
+	n53 [label="binop
+op: *"]
+	n54 [label="variable
+request: arcsin_x" color=lightgreen]
+	n53 -> n54
+	n55 [label="constant
+value: 6.0" color=yellow]
+	n53 -> n55
+	n51 -> n53
+}
